@@ -7,8 +7,8 @@ import java.util.List;
 
 @Getter
 @Setter
-public class Region extends BaseModel{
+public class Theater extends BaseModel{
     String name;
-    List<Theater> theaters;
-    List<Movie> movies;
+    Region region;
+    List<Screen> screens;
 }
