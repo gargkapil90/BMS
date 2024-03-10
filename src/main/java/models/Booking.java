@@ -1,5 +1,6 @@
 package models;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,11 +9,16 @@ import java.util.List;
 
 @Getter
 @Setter
+@Entity
 public class Booking extends BaseModel{
-    BookingStatus bookingStatus;
-    List<ShowSeat> showSeats;
-    User user;
-    Date bookedAt;
-    double amount;
-    List<Payment> payments;
+    @Enumerated(EnumType.ORDINAL)
+    private BookingStatus bookingStatus;
+    @ManyToMany
+    private List<ShowSeat> showSeats;
+    @ManyToOne
+    private User user;
+    private Date bookedAt;
+    private double amount;
+    @OneToMany
+    private List<Payment> payments;
 }
