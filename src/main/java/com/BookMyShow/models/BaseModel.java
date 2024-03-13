@@ -1,4 +1,4 @@
-package models;
+package com.BookMyShow.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,7 +10,6 @@ import java.util.Date;
 
 @Getter
 @Setter
-@Entity
 @MappedSuperclass
 public class BaseModel {
     @Id

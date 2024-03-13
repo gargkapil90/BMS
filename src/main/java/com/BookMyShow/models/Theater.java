@@ -1,4 +1,4 @@
-package models;
+package com.BookMyShow.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;

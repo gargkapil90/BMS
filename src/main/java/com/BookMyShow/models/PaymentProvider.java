@@ -1,4 +1,4 @@
-package models;
+package com.BookMyShow.models;
 
 public enum PaymentProvider {
     PAYU,

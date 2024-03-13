@@ -1,4 +1,4 @@
-package dtos;
+package com.BookMyShow.dtos;
 
 public class BookingResponseDto {
     Long bookingId;

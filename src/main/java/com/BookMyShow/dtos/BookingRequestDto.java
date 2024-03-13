@@ -1,4 +1,4 @@
-package dtos;
+package com.BookMyShow.dtos;
 
 import java.util.List;
 
